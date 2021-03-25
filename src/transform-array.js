@@ -62,7 +62,6 @@ module.exports = function transform(arr) {
     transformedArr[elemIndex] = 'Deleted!';
     transformedArr[elemIndex - 1] = 'Deleted!';
   });
-  console.log(transformedArr);
   // ! delete all 'Deleted!' elements from final array
   return transformedArr.filter(elem => elem !== 'Deleted!');
 };
