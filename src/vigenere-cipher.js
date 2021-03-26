@@ -29,7 +29,7 @@ class VigenereCipheringMachine {
 
         outputIndex = functionType(elemAlphabetIndex, keyAlphabetIndex);
 
-        if (outputIndex > 26) {
+        if (outputIndex >= 26) {
           outputIndex -= 26;
         }
         if (outputIndex < 0) {
